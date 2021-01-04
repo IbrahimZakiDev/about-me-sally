@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About me</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id='content'></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                <header>
+                    <h1>Sally Student</h1>
+                </header>
+                <main>
+                    <section>
+                    <p>I'm an aspiring full stack web developer. I love cats, coding, and crocheting.</p>
+                    </section>
+                    <section>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
+                    </section>
+                    <section>
+                        <h2>Education</h2>
+                        <ul>
+                            <li>Bachelors of extreme awesomeness from Yale</li>
+                            <li>Masters in fictional lands from Purdue</li>
+                            <li>Doctrate of the mystical Arts from Tamriel University</li>
+                        </ul>
+                    </section>
+                    <section>
+                    <h2>Employment History</h2>
+                        <h3>State Alchemist</h3>
+                        <ul>
+                        <li>Employer: Government of Amestris</li>
+                        <li>Employment dates: April 2009 - July 2010</li>
+                        <li>Responsibilities: Primarily focused on the study of the Alchemic arts, and the advancement of research in the field,
+                            as well as military responsibilities when called to action</li>
+                        </ul>
+                        <h3>Hokage</h3>
+                        <ul>
+                        <li>Employer: Village hidden in the Leaves</li>
+                        <li>Employment dates: February 2007 - March 2017</li>
+                        <li>Responsibilities: Maintained peace and order within the village Hidden in the Leaves, risking my life to ensure the
+                            safety of all that preside, as well as oversee Ninja both at home and those who are deployed in the field</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Contact Info</h2>
+                        <p>Twitter: <a href="https://twitter.com/sallyStudent">@sallyStudent</a></p>
+                        <img src="sally.jpg" alt="sally with her hands crossed"></img>
+                    </section>
+                </main>
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App />, document.querySelector('#content'))
+    </script>
+</body>
+
+</html>
